@@ -1,0 +1,14 @@
+D:\GitHub\winnangcao\giaodien_Windows\BAL\bin\Debug\BAL.dll
+D:\GitHub\winnangcao\giaodien_Windows\BAL\bin\Debug\BAL.pdb
+D:\GitHub\winnangcao\giaodien_Windows\BAL\bin\Debug\DAL.dll
+D:\GitHub\winnangcao\giaodien_Windows\BAL\bin\Debug\DAL.pdb
+D:\GitHub\winnangcao\giaodien_Windows\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+D:\GitHub\winnangcao\giaodien_Windows\BAL\obj\Debug\BAL.dll
+D:\GitHub\winnangcao\giaodien_Windows\BAL\obj\Debug\BAL.pdb
+C:\Users\Admin\Desktop\winnangcao-master\winnangcao-master\giaodien_Windows\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\winnangcao-master\winnangcao-master\giaodien_Windows\BAL\obj\Debug\BAL.dll
+C:\Users\Admin\Desktop\winnangcao-master\winnangcao-master\giaodien_Windows\BAL\obj\Debug\BAL.pdb
+C:\Users\Admin\Desktop\winnangcao-master\winnangcao-master\giaodien_Windows\BAL\bin\Debug\BAL.dll
+C:\Users\Admin\Desktop\winnangcao-master\winnangcao-master\giaodien_Windows\BAL\bin\Debug\BAL.pdb
+C:\Users\Admin\Desktop\winnangcao-master\winnangcao-master\giaodien_Windows\BAL\bin\Debug\DAL.dll
+C:\Users\Admin\Desktop\winnangcao-master\winnangcao-master\giaodien_Windows\BAL\bin\Debug\DAL.pdb
