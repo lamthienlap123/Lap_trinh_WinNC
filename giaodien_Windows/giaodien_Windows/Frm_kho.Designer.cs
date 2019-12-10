@@ -179,7 +179,7 @@
             // 
             // txt_tenkho
             // 
-            this.txt_tenkho.Location = new System.Drawing.Point(77, 100);
+            this.txt_tenkho.Location = new System.Drawing.Point(77, 89);
             this.txt_tenkho.MenuManager = this.barManager1;
             this.txt_tenkho.Name = "txt_tenkho";
             this.txt_tenkho.Size = new System.Drawing.Size(141, 20);
@@ -187,7 +187,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(12, 103);
+            this.labelControl2.Location = new System.Drawing.Point(12, 92);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(38, 13);
             this.labelControl2.TabIndex = 1;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace giaodien_Windows
 
         public Form1()
         {
+            
             InitializeComponent();
             DisEndMenuLogin(true, idlogin);
 
@@ -40,10 +42,10 @@ namespace giaodien_Windows
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
-            Form frm = kiemtraform(typeof(Frm_taophieu));
+            Form frm = kiemtraform(typeof(Frm_LapPhieu));
             if (frm == null)
             {
-                Frm_taophieu forms = new Frm_taophieu();
+                Frm_LapPhieu forms = new Frm_LapPhieu();
                 forms.MdiParent = this;
                 forms.Show();
             }
@@ -122,6 +124,7 @@ namespace giaodien_Windows
         {
             //Frm_DangNhap dn = new Frm_DangNhap();
             //dn.Show();
+
         }
 
         private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -141,10 +144,10 @@ namespace giaodien_Windows
 
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = kiemtraform(typeof(Frm_hangton));
+            Form frm = kiemtraform(typeof(Frm_giat));
             if (frm == null)
             {
-                Frm_hangton forms = new Frm_hangton();
+                Frm_giat forms = new Frm_giat();
                 forms.MdiParent = this;
                 forms.Show();
             }
@@ -195,6 +198,29 @@ namespace giaodien_Windows
             if (frm == null)
             {
                 Frm_themnguoidungvaonhom forms = new Frm_themnguoidungvaonhom();
+                forms.MdiParent = this;
+                forms.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (XtraMessageBox.Show("Bạn có muốn thoát khỏi ứng dụng?", "Confirmation", MessageBoxButtons.YesNo) != DialogResult.Yes)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void barButtonItem16_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = kiemtraform(typeof(Frm_TraHang));
+            if (frm == null)
+            {
+                Frm_TraHang forms = new Frm_TraHang();
                 forms.MdiParent = this;
                 forms.Show();
             }

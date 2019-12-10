@@ -49,5 +49,12 @@ namespace BAL
             dv.CMND = cmnd;    
             qltg.SubmitChanges();
         }
+        public List<NHANVIEN> TimKiemNhanVien(string TenNV)
+        {
+            var a = from x in qltg.NHANVIENs
+                    where x.HoTen.Contains(TenNV)
+                    select x;
+            return a.ToList<NHANVIEN>();
+        }
     }
 }

@@ -42,8 +42,6 @@ namespace giaodien_Windows
             txt_hoten.ResetText();
             txt_manv.ResetText();
             txt_sdt.ResetText();
-            rdo_nam.ResetText();
-            rdo_nu.ResetText();
             date_ngaysinh.ResetText();
             date_ngayvaolam.ResetText();
             dataGridView1.DataSource = nv.LoadNhanVien();
@@ -161,6 +159,11 @@ namespace giaodien_Windows
         private void btn_lammoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Frm_nhanvien_Load(sender, e);
+        }
+        private void txt_timkiem_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            dataGridView1.DataSource = nv.TimKiemNhanVien(txt_timkiem.Text);
+            dataGridView1.Refresh();
         }
     }
 }

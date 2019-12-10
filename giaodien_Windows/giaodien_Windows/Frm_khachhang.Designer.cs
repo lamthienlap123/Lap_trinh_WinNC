@@ -60,7 +60,7 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_timkiem = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -78,7 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_hoten.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_timkiem.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -267,14 +267,15 @@
             // 
             // txt_congno
             // 
-            this.txt_congno.Location = new System.Drawing.Point(90, 225);
+            this.txt_congno.EditValue = "0";
+            this.txt_congno.Location = new System.Drawing.Point(90, 167);
             this.txt_congno.Name = "txt_congno";
             this.txt_congno.Size = new System.Drawing.Size(141, 20);
             this.txt_congno.TabIndex = 11;
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(12, 228);
+            this.labelControl6.Location = new System.Drawing.Point(12, 170);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(44, 13);
             this.labelControl6.TabIndex = 10;
@@ -282,14 +283,14 @@
             // 
             // txt_sdt
             // 
-            this.txt_sdt.Location = new System.Drawing.Point(90, 183);
+            this.txt_sdt.Location = new System.Drawing.Point(90, 141);
             this.txt_sdt.Name = "txt_sdt";
             this.txt_sdt.Size = new System.Drawing.Size(141, 20);
             this.txt_sdt.TabIndex = 9;
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(12, 186);
+            this.labelControl5.Location = new System.Drawing.Point(12, 144);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(19, 13);
             this.labelControl5.TabIndex = 8;
@@ -297,14 +298,14 @@
             // 
             // txt_diachi
             // 
-            this.txt_diachi.Location = new System.Drawing.Point(90, 144);
+            this.txt_diachi.Location = new System.Drawing.Point(90, 115);
             this.txt_diachi.Name = "txt_diachi";
             this.txt_diachi.Size = new System.Drawing.Size(141, 20);
             this.txt_diachi.TabIndex = 7;
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(12, 147);
+            this.labelControl4.Location = new System.Drawing.Point(12, 118);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(36, 13);
             this.labelControl4.TabIndex = 6;
@@ -319,14 +320,14 @@
             // 
             // txt_hoten
             // 
-            this.txt_hoten.Location = new System.Drawing.Point(90, 100);
+            this.txt_hoten.Location = new System.Drawing.Point(90, 89);
             this.txt_hoten.Name = "txt_hoten";
             this.txt_hoten.Size = new System.Drawing.Size(141, 20);
             this.txt_hoten.TabIndex = 2;
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(12, 103);
+            this.labelControl2.Location = new System.Drawing.Point(12, 92);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(32, 13);
             this.labelControl2.TabIndex = 1;
@@ -344,7 +345,7 @@
             // 
             this.groupControl3.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl3.CaptionImageOptions.Image")));
             this.groupControl3.Controls.Add(this.simpleButton1);
-            this.groupControl3.Controls.Add(this.textEdit8);
+            this.groupControl3.Controls.Add(this.txt_timkiem);
             this.groupControl3.Controls.Add(this.labelControl9);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl3.Location = new System.Drawing.Point(264, 32);
@@ -356,17 +357,18 @@
             // simpleButton1
             // 
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(334, 40);
+            this.simpleButton1.Location = new System.Drawing.Point(334, 43);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(34, 33);
+            this.simpleButton1.Size = new System.Drawing.Size(34, 27);
             this.simpleButton1.TabIndex = 3;
             // 
-            // textEdit8
+            // txt_timkiem
             // 
-            this.textEdit8.Location = new System.Drawing.Point(88, 47);
-            this.textEdit8.Name = "textEdit8";
-            this.textEdit8.Size = new System.Drawing.Size(240, 20);
-            this.textEdit8.TabIndex = 2;
+            this.txt_timkiem.Location = new System.Drawing.Point(96, 47);
+            this.txt_timkiem.Name = "txt_timkiem";
+            this.txt_timkiem.Size = new System.Drawing.Size(232, 20);
+            this.txt_timkiem.TabIndex = 2;
+            this.txt_timkiem.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.textEdit8_EditValueChanging);
             // 
             // labelControl9
             // 
@@ -430,7 +432,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_timkiem.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -471,7 +473,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.TextEdit textEdit8;
+        private DevExpress.XtraEditors.TextEdit txt_timkiem;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private System.Windows.Forms.DataGridView dataGridView1;

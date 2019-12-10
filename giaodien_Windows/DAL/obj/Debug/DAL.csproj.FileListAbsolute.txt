@@ -9,3 +9,8 @@ C:\Users\Admin\Desktop\winnangcao-master\winnangcao-master\giaodien_Windows\DAL\
 C:\Users\Admin\Desktop\winnangcao-master\winnangcao-master\giaodien_Windows\DAL\bin\Debug\DAL.pdb
 C:\Users\Admin\Desktop\winnangcao-master\winnangcao-master\giaodien_Windows\DAL\obj\Debug\DAL.dll
 C:\Users\Admin\Desktop\winnangcao-master\winnangcao-master\giaodien_Windows\DAL\obj\Debug\DAL.pdb
+D:\GitHub\Lap_trinh_WinNC\giaodien_Windows\DAL\bin\Debug\DAL.dll.config
+D:\GitHub\Lap_trinh_WinNC\giaodien_Windows\DAL\bin\Debug\DAL.dll
+D:\GitHub\Lap_trinh_WinNC\giaodien_Windows\DAL\bin\Debug\DAL.pdb
+D:\GitHub\Lap_trinh_WinNC\giaodien_Windows\DAL\obj\Debug\DAL.dll
+D:\GitHub\Lap_trinh_WinNC\giaodien_Windows\DAL\obj\Debug\DAL.pdb

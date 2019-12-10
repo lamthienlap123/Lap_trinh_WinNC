@@ -13,6 +13,7 @@ namespace BAL
         {
             var x = from y in qltg.DONHANGs
                     join t in qltg.KHACHHANGs on y.MaKH equals t.MaKH
+                    where y.TinhTrang =="Đã giặt" && y.TrangThai=="Chưa trả hàng"
                     select new
                     {
                         y.MaKho,
@@ -55,12 +56,23 @@ namespace BAL
             }
             return dt;
         }
-        public void updatett(String mahd)
+        public void updatett(string mahd)
         {
-            KHACHHANG d = new KHACHHANG();
-            d = qltg.KHACHHANGs.Where(t => t.MaKH == mahd).FirstOrDefault();
-            d.CongNo = 0;
+            DONHANG d = new DONHANG();
+            d = qltg.DONHANGs.Where(t => t.MaDH == int.Parse(mahd)).FirstOrDefault();
+            d.TrangThai = "Đã trả hàng"; 
             qltg.SubmitChanges();
+        }
+        public List<CTDONHANG> loadCTDHtheoDH(int mahd)
+        {
+            return qltg.CTDONHANGs.Where(t => t.MaDH == mahd).ToList<CTDONHANG>();
+        }
+        public List<DONHANG> TimKiemMaDH(int MaDH)
+        {
+            var a = from x in qltg.DONHANGs
+                    where x.MaDH == MaDH 
+                    select x;
+            return a.ToList<DONHANG>();
         }
     }
 }

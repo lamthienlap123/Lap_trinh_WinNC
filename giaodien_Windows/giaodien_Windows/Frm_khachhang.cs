@@ -121,5 +121,11 @@ dataGridView1.DataSource = kh.LoadkhachHang();
         {
             Frm_khachhang_Load(sender, e);
         }
+
+        private void textEdit8_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            dataGridView1.DataSource = kh.TimKiemKhachHang(txt_timkiem.Text);
+            dataGridView1.Refresh();
+        }
     }
 }

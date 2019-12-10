@@ -22,7 +22,14 @@ namespace giaodien_Windows
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new Frm_giat());
+            DevExpress.Skins.SkinManager.EnableMdiFormSkins();
+            DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = "Office 2007 Green";
+            //Application.Run(new Frm_giat());
+            //Application.Run(new Frm_taophieu());
+            //Application.Run(new Frm_nhanvien());
+            //Application.Run(new Frm_TraHang());
+            Application.Run(new Form1());
+            //Application.Run(new Frm_LapPhieu());
         }
     }
 }

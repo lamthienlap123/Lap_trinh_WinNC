@@ -44,6 +44,7 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.txt_hoten = new DevExpress.XtraEditors.TextEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.rdo_nam = new System.Windows.Forms.RadioButton();
             this.date_ngayvaolam = new DevExpress.XtraEditors.DateEdit();
             this.date_ngaysinh = new DevExpress.XtraEditors.DateEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -59,11 +60,9 @@
             this.txt_sdt = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.txt_diachi = new DevExpress.XtraEditors.TextEdit();
-            this.rdo_nam = new System.Windows.Forms.RadioButton();
             this.rdo_nu = new System.Windows.Forms.RadioButton();
             this.txt_manv = new DevExpress.XtraEditors.TextEdit();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.txt_timkiem = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
@@ -214,7 +213,7 @@
             // 
             // txt_hoten
             // 
-            this.txt_hoten.Location = new System.Drawing.Point(86, 80);
+            this.txt_hoten.Location = new System.Drawing.Point(86, 73);
             this.txt_hoten.MenuManager = this.barManager1;
             this.txt_hoten.Name = "txt_hoten";
             this.txt_hoten.Size = new System.Drawing.Size(141, 20);
@@ -223,6 +222,7 @@
             // groupControl2
             // 
             this.groupControl2.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl2.CaptionImageOptions.Image")));
+            this.groupControl2.Controls.Add(this.rdo_nam);
             this.groupControl2.Controls.Add(this.date_ngayvaolam);
             this.groupControl2.Controls.Add(this.date_ngaysinh);
             this.groupControl2.Controls.Add(this.labelControl1);
@@ -238,7 +238,6 @@
             this.groupControl2.Controls.Add(this.txt_sdt);
             this.groupControl2.Controls.Add(this.labelControl5);
             this.groupControl2.Controls.Add(this.txt_diachi);
-            this.groupControl2.Controls.Add(this.rdo_nam);
             this.groupControl2.Controls.Add(this.rdo_nu);
             this.groupControl2.Controls.Add(this.txt_manv);
             this.groupControl2.Controls.Add(this.txt_hoten);
@@ -249,35 +248,46 @@
             this.groupControl2.TabIndex = 38;
             this.groupControl2.Text = "Thông tin nhân viên";
             // 
+            // rdo_nam
+            // 
+            this.rdo_nam.AutoSize = true;
+            this.rdo_nam.Location = new System.Drawing.Point(86, 101);
+            this.rdo_nam.Name = "rdo_nam";
+            this.rdo_nam.Size = new System.Drawing.Size(46, 17);
+            this.rdo_nam.TabIndex = 23;
+            this.rdo_nam.TabStop = true;
+            this.rdo_nam.Text = "Nam";
+            this.rdo_nam.UseVisualStyleBackColor = true;
+            // 
             // date_ngayvaolam
             // 
             this.date_ngayvaolam.EditValue = null;
-            this.date_ngayvaolam.Location = new System.Drawing.Point(83, 332);
+            this.date_ngayvaolam.Location = new System.Drawing.Point(90, 254);
             this.date_ngayvaolam.MenuManager = this.barManager1;
             this.date_ngayvaolam.Name = "date_ngayvaolam";
             this.date_ngayvaolam.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.date_ngayvaolam.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_ngayvaolam.Size = new System.Drawing.Size(176, 20);
+            this.date_ngayvaolam.Size = new System.Drawing.Size(139, 20);
             this.date_ngayvaolam.TabIndex = 22;
             // 
             // date_ngaysinh
             // 
             this.date_ngaysinh.EditValue = null;
-            this.date_ngaysinh.Location = new System.Drawing.Point(82, 298);
+            this.date_ngaysinh.Location = new System.Drawing.Point(88, 228);
             this.date_ngaysinh.MenuManager = this.barManager1;
             this.date_ngaysinh.Name = "date_ngaysinh";
             this.date_ngaysinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.date_ngaysinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_ngaysinh.Size = new System.Drawing.Size(176, 20);
+            this.date_ngaysinh.Size = new System.Drawing.Size(139, 20);
             this.date_ngaysinh.TabIndex = 21;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(12, 301);
+            this.labelControl1.Location = new System.Drawing.Point(12, 231);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(48, 13);
             this.labelControl1.TabIndex = 20;
@@ -285,7 +295,7 @@
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(9, 156);
+            this.label4.Location = new System.Drawing.Point(11, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 0;
@@ -294,7 +304,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 114);
+            this.label3.Location = new System.Drawing.Point(9, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 17;
@@ -302,7 +312,7 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(9, 83);
+            this.label2.Location = new System.Drawing.Point(9, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 0;
@@ -319,7 +329,7 @@
             // 
             // txt_cmnd
             // 
-            this.txt_cmnd.Location = new System.Drawing.Point(82, 269);
+            this.txt_cmnd.Location = new System.Drawing.Point(88, 202);
             this.txt_cmnd.MenuManager = this.barManager1;
             this.txt_cmnd.Name = "txt_cmnd";
             this.txt_cmnd.Size = new System.Drawing.Size(141, 20);
@@ -327,7 +337,7 @@
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(12, 272);
+            this.labelControl8.Location = new System.Drawing.Point(14, 205);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(29, 13);
             this.labelControl8.TabIndex = 14;
@@ -335,7 +345,7 @@
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(12, 335);
+            this.labelControl7.Location = new System.Drawing.Point(14, 257);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(65, 13);
             this.labelControl7.TabIndex = 12;
@@ -343,7 +353,7 @@
             // 
             // txt_email
             // 
-            this.txt_email.Location = new System.Drawing.Point(82, 234);
+            this.txt_email.Location = new System.Drawing.Point(88, 176);
             this.txt_email.MenuManager = this.barManager1;
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(141, 20);
@@ -351,7 +361,7 @@
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(12, 237);
+            this.labelControl6.Location = new System.Drawing.Point(14, 179);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(24, 13);
             this.labelControl6.TabIndex = 10;
@@ -359,7 +369,7 @@
             // 
             // txt_sdt
             // 
-            this.txt_sdt.Location = new System.Drawing.Point(82, 192);
+            this.txt_sdt.Location = new System.Drawing.Point(88, 150);
             this.txt_sdt.MenuManager = this.barManager1;
             this.txt_sdt.Name = "txt_sdt";
             this.txt_sdt.Size = new System.Drawing.Size(141, 20);
@@ -367,7 +377,7 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(12, 195);
+            this.labelControl5.Location = new System.Drawing.Point(14, 153);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(19, 13);
             this.labelControl5.TabIndex = 8;
@@ -375,27 +385,15 @@
             // 
             // txt_diachi
             // 
-            this.txt_diachi.Location = new System.Drawing.Point(82, 153);
+            this.txt_diachi.Location = new System.Drawing.Point(88, 124);
             this.txt_diachi.MenuManager = this.barManager1;
             this.txt_diachi.Name = "txt_diachi";
             this.txt_diachi.Size = new System.Drawing.Size(141, 20);
             this.txt_diachi.TabIndex = 7;
             // 
-            // rdo_nam
-            // 
-            this.rdo_nam.AutoSize = true;
-            this.rdo_nam.Location = new System.Drawing.Point(86, 112);
-            this.rdo_nam.Name = "rdo_nam";
-            this.rdo_nam.Size = new System.Drawing.Size(46, 17);
-            this.rdo_nam.TabIndex = 5;
-            this.rdo_nam.TabStop = true;
-            this.rdo_nam.Text = "Nam";
-            this.rdo_nam.UseVisualStyleBackColor = true;
-            // 
             // rdo_nu
             // 
-            this.rdo_nu.AutoSize = true;
-            this.rdo_nu.Location = new System.Drawing.Point(166, 112);
+            this.rdo_nu.Location = new System.Drawing.Point(188, 101);
             this.rdo_nu.Name = "rdo_nu";
             this.rdo_nu.Size = new System.Drawing.Size(39, 17);
             this.rdo_nu.TabIndex = 4;
@@ -413,7 +411,6 @@
             // groupControl3
             // 
             this.groupControl3.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl3.CaptionImageOptions.Image")));
-            this.groupControl3.Controls.Add(this.simpleButton1);
             this.groupControl3.Controls.Add(this.txt_timkiem);
             this.groupControl3.Controls.Add(this.labelControl9);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -423,20 +420,13 @@
             this.groupControl3.TabIndex = 39;
             this.groupControl3.Text = "Tím kiếm";
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(334, 40);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(34, 33);
-            this.simpleButton1.TabIndex = 3;
-            // 
             // txt_timkiem
             // 
             this.txt_timkiem.Location = new System.Drawing.Point(88, 47);
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.Size = new System.Drawing.Size(240, 20);
             this.txt_timkiem.TabIndex = 2;
+            this.txt_timkiem.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txt_timkiem_EditValueChanging);
             // 
             // labelControl9
             // 
@@ -481,7 +471,7 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "Frm_nhanvien";
-            this.Text = "Frm_nhanvien";
+            this.Text = "NHÂN VIÊN";
             this.Load += new System.EventHandler(this.Frm_nhanvien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_hoten.Properties)).EndInit();
@@ -533,11 +523,9 @@
         private DevExpress.XtraEditors.TextEdit txt_sdt;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.TextEdit txt_diachi;
-        private System.Windows.Forms.RadioButton rdo_nam;
         private System.Windows.Forms.RadioButton rdo_nu;
         private DevExpress.XtraEditors.TextEdit txt_manv;
         private DevExpress.XtraEditors.TextEdit txt_hoten;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.TextEdit txt_timkiem;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.GroupControl groupControl4;
@@ -549,5 +537,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.DateEdit date_ngayvaolam;
         private DevExpress.XtraEditors.DateEdit date_ngaysinh;
+        private System.Windows.Forms.RadioButton rdo_nam;
     }
 }

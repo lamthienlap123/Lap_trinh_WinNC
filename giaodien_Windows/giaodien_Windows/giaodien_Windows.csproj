@@ -63,6 +63,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -131,6 +132,12 @@
     </Compile>
     <Compile Include="Frm_kho.Designer.cs">
       <DependentUpon>Frm_kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_LapPhieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_LapPhieu.Designer.cs">
+      <DependentUpon>Frm_LapPhieu.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_manhinh.cs">
       <SubType>Form</SubType>
@@ -203,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_kho.resx">
       <DependentUpon>Frm_kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_LapPhieu.resx">
+      <DependentUpon>Frm_LapPhieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_manhinh.resx">
       <DependentUpon>Frm_manhinh.cs</DependentUpon>

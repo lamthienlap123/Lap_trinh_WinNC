@@ -28,12 +28,11 @@ namespace BAL
         }
         public List<DONHANG> loaddonhang()
         {
-            return qltg.DONHANGs.Select(t => t).ToList<DONHANG>();
+            return qltg.DONHANGs.Where(t => t.TinhTrang=="Chưa giặt").ToList<DONHANG>();
         }
-        public void themdonhang(int madh,DateTime ngaynhan,DateTime ngaytra,string tinhtrang,float thanhtien,string ghichu,string manv,string makh,string makho)
+        public void themdonhang(DateTime ngaynhan,DateTime ngaytra,string tinhtrang,float thanhtien,string ghichu,string manv,string makh,string makho)
         {
             DONHANG dh = new DONHANG();
-            dh.MaDH = madh;
             dh.NgayNhan = ngaynhan;
             dh.NgayTra = ngaytra;
             dh.TinhTrang = tinhtrang;
@@ -104,6 +103,22 @@ namespace BAL
         {
             return qltg.KHACHHANGs.Where(t => t.MaKH == pmakh).ToList<KHACHHANG>();
         }
+        public string LayTenDV(string MaDV)
+        {
+            string a = "";
+            var ma = from x in qltg.DICHVUs
+                     where x.MaDV == MaDV
+                     select new
+                     {
+                         x.TenDV
+                     };
+            foreach (var r in ma)
+            {
+                a = r.TenDV;
+
+            }
+            return a;
+        }
         public List<NHANVIEN> getNVtheoma(string pmanv)
         {
             return qltg.NHANVIENs.Where(t => t.MaNV == pmanv).ToList<NHANVIEN>();
@@ -128,12 +143,7 @@ namespace BAL
         {
             DONHANG dh = new DONHANG();
             dh = qltg.DONHANGs.Where(t => t.MaDH == madh).FirstOrDefault();
-
             dh.ThanhTien = tt;
-
-
-
-
             qltg.SubmitChanges();
         }
     }

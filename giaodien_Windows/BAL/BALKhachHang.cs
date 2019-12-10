@@ -43,5 +43,12 @@ namespace BAL
             qltg.KHACHHANGs.InsertOnSubmit(d);
             qltg.SubmitChanges(); ;
         }
+        public List<KHACHHANG> TimKiemKhachHang(string TenKH)
+        {
+            var a = from x in qltg.KHACHHANGs
+                    where x.TenKH.Contains(TenKH)
+                    select x;
+            return a.ToList<KHACHHANG>();
+        }
     }
 }

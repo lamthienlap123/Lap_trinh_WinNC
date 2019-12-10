@@ -256,7 +256,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 154);
+            this.label3.Location = new System.Drawing.Point(13, 125);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 9;
@@ -264,14 +264,14 @@
             // 
             // txt_dongia
             // 
-            this.txt_dongia.Location = new System.Drawing.Point(77, 151);
+            this.txt_dongia.Location = new System.Drawing.Point(77, 122);
             this.txt_dongia.Name = "txt_dongia";
             this.txt_dongia.Size = new System.Drawing.Size(141, 21);
             this.txt_dongia.TabIndex = 8;
             // 
             // txt_tdv
             // 
-            this.txt_tdv.Location = new System.Drawing.Point(77, 111);
+            this.txt_tdv.Location = new System.Drawing.Point(77, 95);
             this.txt_tdv.Name = "txt_tdv";
             this.txt_tdv.Size = new System.Drawing.Size(141, 21);
             this.txt_tdv.TabIndex = 7;
@@ -279,7 +279,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 114);
+            this.label2.Location = new System.Drawing.Point(13, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 6;

@@ -284,7 +284,7 @@
             this.hoatDongCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.qL_NGUOIDUNGBindingSource, "HoatDong", true));
             this.hoatDongCheckEdit.Location = new System.Drawing.Point(105, 90);
             this.hoatDongCheckEdit.Name = "hoatDongCheckEdit";
-            this.hoatDongCheckEdit.Properties.Caption = "checkEdit1";
+            this.hoatDongCheckEdit.Properties.Caption = "";
             this.hoatDongCheckEdit.Size = new System.Drawing.Size(100, 19);
             this.hoatDongCheckEdit.TabIndex = 7;
             // 
